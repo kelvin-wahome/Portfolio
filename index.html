@@ -1,599 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="/home/blackrose/Desktop/Portfolio/font-awesome-4.7.0"> -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <title>Portfolio</title>
-  <!--LINK TO STYLESHEETS-->
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="images/ico.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Krub|Nunito+Sans|Raleway|Zilla+Slab" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-  <!--LINK TO BOOTSTRAP-->
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
 </head>
+  <body>
 
-<body>
-  <div class="landing" id="landing">
-    <div class="landing-overlay"></div>
-    <div class="landing-text">
-      <h3 id="demoo" style="line-height: 120px;
-      text-transform: uppercase;
-      font-weight: bold;"></h3>
-      <h4><span id="description"> I am a Full-Stack Web Developer </span>
-      </h4>
-      <br>
-      <div class="navigations">
-        <hr class="landing-hr top">
-        <a class="sections" style="font-size:35px !important;" href="#about"><button class="btn btn-lg">About Me</button></a>
-        <a class="sections" style="font-size:35px !important;" href="#skills"><button class="btn btn-lg">Skills</button></a>
-        <a class="sections" style="font-size:35px !important;" href="#projects"><button class="btn btn-lg">Projects</button></a>
-        <a class="sections" style="font-size:35px !important;" href="#contact"><button class="btn btn-lg">Contact</button></a>
-        <hr class="landing-hr bottom">
-      </div>
+<nav id="art-menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collasped">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Navigation Toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collasped">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home" class="scroll-nav">Home</a></li>
+                <li><a href="#about" class="scroll-nav">About</a></li>
+                <li><a href="#portfolio" class="scroll-nav">Portfolio</a></li>
+                <li><a href="#contact" class="scroll-nav">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div id="home" class="text-center">
+    <div class="layer">
+        <div class="content">
+            <h1>Hi I'm  <strong><span>Kelvin  Wahome</span></strong></h1>
+            <p class="lead">Full Stack  Developer and UX/UI designer</p>
+            <a href="#about" class="fa fa-angle-down scroll-nav"></a>
+        </div>
     </div>
+
+</div>
+<div id="about">
+    <div class="container">
+        <div class="section-title center text-center">
+            <h2><strong>ABOUT Me</strong></h2>
+            <div class="line">
+            </div>
+        </div>
+        <div class="gap"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Hi there, I’m <strong>Kelvin Wahome</strong>.</p>
+                <p>I am a Full Stack Developer with excellent typing and programming skills.  .</p>
+                <p>I love my work and enjoy each new project as I get it.As a designer and developer, I understand the perfect user interface should look good and work even better.I also uncover problems and solve them. Feel free to have a look at my portfolio and don’t hesitate to contact me if you think I can be of service to you.</p>
+                <p><strong>Thanks</strong> for stopping by!</p>
+            </div>
+            <div class="col-md-6">
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" data-width="70%" style="width:70%;"  >
+                        70% -
+                    </div>
+                </div>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" data-width="20%" style="width:20%;" >
+                        20% - Ruby
+                    </div>
+                </div>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;"  >
+                        60% - User interface
+                    </div>
+                </div>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+                        80% - WordPress
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+<div class="col-xs-12 text-center">
+  <blockquote>
+    "It's not at all important to get it right the first time. It's vitally important to get it right the last time"
+  </blockquote>
+     <div class="joinjour text-center">
+            <a href="#contact" class="btn btn-block scroll-nav">Book Me Now</a>
+        </div>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="container" id="about">
-    <div class="row">
-      <h2 class="skills" style="text-align:center;font-size: 45px;background: rgba(49, 49, 49, 0.466) !important;color: whitesmoke;height: 80px  !important;padding-top: 15px !important;width: 100% !important;"><b>About</b></h2>
-      <br>
-      <div class="image-container col-xs-12 col-sm-12 col-md-5 col-lg-5">
-        <img src="images/kev.jpg" alt="Kelvin Wahome" class="picture img-responsive">
-      </div>
-      <div class="aboutt col-sm-12 col-md-7 col-lg-7" style="font-size:20px;">
-        <div class="well" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-          <p>My name is Kelvin Wahome,I am a Full-Stack Web Developer.</p>
+</div>
+   <!-- Works
+================================================== -->
+<div id="portfolio" class="text-center">
+    <div class="container">
 
-          <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            View more details
-          </button>
+        <div class="section-title center">
+            <h2>My WORKS</h2>
+            <div class="line">
 
-          <div class="collapse" id="collapseExample">
-
-            <p>Building state-of-the-art, user-friendly, easy to use websites and applications is truly a passion of mine.</p>
-            <p>I have a passion and keen eye for user-centered design, therefore, I always design my projects first before I start coding them.</p>
-            <p>Being a passionate individual, I view every experience as an opportunity to learn and better myself.Projects that challenge me to push myself beyond my comfort and boundaries are the best ones as I acquire new skills and knowledge
-              while working on them.</p>
-            <p>I joined <b>Moringa School</b> in April 2017 where I enrolled for the 5-week <b>Moringa Prep</b> programme where I learnt <b>HTML,CSS,Bootstrap and Javascript(Vanilla and Angular Javascript)</b>.After that I later joined the 15-week
-              <b>Moringa Core</b> programme where I took a course in <b>Python(Flask and Django frameworks).</b></p>
-            <p>Aside from coding,I also love watching and playing football and rugby and listening to music.</p>
-          </div>
+            </div>
         </div>
-      </div>
+        <div class="gap"></div>
+        <section id="works" class="container">
+
+
+            <ul class="portfolio-items col-4">
+                <li class="portfolio-item apps">
+                    <div class="item-inner">
+                      <img src="images/insta.png" alt="Italian Trulli">
+                        <h5></h5>
+                        <div class="layer">
+                            <a class="preview view" href="https://insta9669.herokuapp.com/"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </li><!--/.portfolio-item-->
+
+            </ul>
+        </section><!--/#portfolio-->
+    </div>
+</div>
+<div id="contact" class="text-center">
+    <div class="container">
+        <div class="section-title center">
+            <h2>Get in Touch</h2>
+            <div class="line">
+
+            </div>
+        </div>
+        <div class="gap"></div>
+        <div class="address">Want to get in touch with me?  just feel free to drop me a line anytime. </div>
+        <div id="contact-form">
+            <div id="message"></div>
+            <form method="post" action="php/contact.php" name="contactform" id="contactform">
+                <input name="name" type="text" id="name"  class="inputForm2" placeholder="Name"  >
+                <input name="email" type="text" id="email" placeholder="Email">
+                <textarea name="comments"  id="comments" placeholder="Message"  ></textarea>
+                <input type="submit" class="send_message transition" id="submit" value="Send Message" />
+            </form>
+        </div>
+
 
     </div>
-    <br>
-    <br>
-    <div class="container skills-container" id="skills">
-      <div class="row skills-row">
-        <h2 class="skills" style="text-align:center;font-size: 45px;background: rgb(20, 20, 20) !important;color: whitesmoke;height: 80px  !important;padding-top: 15px !important;width: 100% !important;"><b>Skills</b></h2>
-        <br>
-        <br>
-        <div class="skills-panel">
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-            <div class="thumbnail html" style="background:rgb(20, 20, 20) !important;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);width: 100% !important;height: 370px !important;">
-
-              <li class="languages"> HTML5</li>
-              <br>
-              <img src="images/html.png" alt="">
-              <br>
 
 
-              <p style="color:whitesmoke;font-size:17px;">I use HTML5 to create markups for my applications, making them responsive across all devices.</p>
+</div>
+<!-- Footer
+================================================== -->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container text-center">
+            <div class="footer-logo">
+                <a href="https://codepen.io/jvjijith/pen/woMywq">Jijith J V</a>
             </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-            <div class="thumbnail html" style="background:rgb(20, 20, 20) !important;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);width: 100% !important;height: 370px !important;">
-
-              <li class="languages"> CSS3</li>
-              <br>
-              <img src="images/css.png" alt="">
-              <br>
-
-              <p style="color:whitesmoke;font-size:17px;">I use CSS3 to enhance the appearance of my applications making them visually appealing increasing their User Interface designs and User Experience.</p>
-
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-            <div class="thumbnail html" style="background:rgb(20, 20, 20) !important;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);width: 100% !important;height: 370px !important;">
-
-              <li class="languages"> Bootstrap</li>
-              <br>
-              <img src="images/bootstrap.png" alt="">
-              <br>
-
-              <p style="color:whitesmoke;font-size:17px;">I use bootstrap to make my applications responsive across all platforms ranging from mobile phones to big desktops increasing their User Interface designs and User Experience.</p>
-
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-            <div class="thumbnail html" style="background:rgb(20, 20, 20) !important;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);width: 100% !important;height: 370px !important;">
-
-              <li class="languages"> Javascript</li>
-              <br>
-              <img src="images/javascript.png" alt="">
-              <br>
-
-
-              <p style="color:whitesmoke;font-size:17px;">I use Javascript to make my applications more interactive and dynamic promoting the User Experience.I have also interacted with Angular Javascript(Javascript framework)</p>
-
-            </div>
-            <br>
-          </div>
-          <br>
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 skills-div">
-            <div class="thumbnail html" style="background:rgb(20, 20, 20) !important;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);width: 100% !important;height: 420px !important;">
-
-              <li class="languages">Python</li>
-              <br>
-              <img src="images/py.png" alt="">
-              <br>
-
-
-              <p style="color:whitesmoke;font-size:17px;">I prefer Python because of its scalability as it can be used to build large applications in a very short time.I have interacted with the Flask and Django frameworks.</p>
-
-            </div>
-          </div>
-          <br>
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-            <div class="thumbnail html" style="background:rgb(20, 20, 20) !important;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);width: 100% !important;height: 420px !important;">
-
-              <li class="languages"> PostgreSQL</li>
-              <br>
-              <img src="images/postgres.png" alt="">
-              <br>
-
-
-              <p style="color:whitesmoke;font-size:17px;">I prefer the postgresql database since it enables structural programming hence making database contents appear more organised compared to other databases.</p>
-            </div>
-          </div>
-          <br>
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-            <div class="thumbnail html" style="background:rgb(20, 20, 20) !important;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);width: 100% !important;height: 420px !important;">
-
-              <li class="languages"> Material Design Lite</li>
-              <br>
-              <img src="images/mdl.png" alt="" style="height:140px;">
-              <br>
-
-
-              <p style="color:whitesmoke;font-size:17px;">I prefer material design lite as it enables addition of a Material Design look and feel to websites and aims to optimize for cross-device use,gracefully degrade in older browsers,and offer an
-                experience that is immediately accessible.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-
-    <div class="projects" id="projects">
-      <div class="container">
-        <h1 class="projects-title" style="text-align:center;font-size: 45px;background: rgb(20, 20, 20) !important;color: whitesmoke;height: 80px  !important;padding-top: 15px !important;"><b>Projects</b></h1>
-        <br>
-
-        <div class="row project-row" id="one" data-color="rgb(242, 242, 230)">
-
-          <div class="container-fluid col-xs-12 col-sm-12 col-md-6 col-lg-6" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height: 100% !important;">
-            <div class="project-overlay "></div>
-            <div class="img-container">
-              <figcaption>Carpool</figcaption>
-              <img src="images/pool1.png" alt="Carpool Project" class="img-responsive carpool">
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 project-info">
-
-            <!-- Modal -->
-            <div id="carpool" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-              <div class="container">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-header" style="background:rgb(29, 29, 29)">
-                    <h2 class="project-name" style="color:whitesmoke;">Carpool</h2>
-
-                  </div>
-                  <div class="modal-content" style="background:rgb(29, 29, 29);width:100% !important;">
-                    <div id="carousel-slide-two" class="carousel slide" data-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="item active">
-                          <img src="images/pool.png" alt="Carpool Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/pool1.png" alt="Carpool Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/pool2.png" alt="Carpool Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/pool4.png" alt="Carpool Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/pool5.png" alt="Carpool Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/pool6.png" alt="Carpool Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/pool7.png" alt="Carpool Screenshot" class="img-responsive">
-                        </div>
-                      </div>
-                      <a class="left carousel-control" href="#carousel-slide-two" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                      </a>
-                      <a class="right carousel-control" href="#carousel-slide-two" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <!-- End of modal -->
-            <hr class="style1">
-            <h3 class="project-title"><b>Carpool</b></h3>
-            <hr class="style1">
-            <h4 class="project-description" style="font-size:20px !important;">This is an application that display vehicle specifications per make and model.</h4>
-            <h4 class="project-languages" style="font-size:20px !important;">Technologies Used:
-              <ul>
-                <li>Python<b>(Django Framework)</b></li>
-                <li>PostgreSQL</li>
-                <li>Javascript</li>
-                <li>HTML</li>
-                <li>CSS(Bootstrap)</li>
-
-              </ul>
-            </h4>
-            <a href="#" data-toggle="modal" data-target="#carpool"><button class="btn btn-success btn-md see-more">See more <i class="fas fa-share"></i></button></a>
-            <br>
-            <a href="https://github.com/kelvin-wahome/Carpool" target="blank">
-              <h4 class="site-link btn btn-success">View Project on Github&nbsp;<i class="fab fa-github"></i></h4>
-            </a>&nbsp;<a href="https://carpoool.herokuapp.com/" target="blank">
-              <h4 class="site-link btn btn-success">View site&nbsp;<span class="glyphicon glyphicon-share-alt"></span></h4>
-            </a>
-            <br>
-            <br>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row project-row" id="two" data-color="rgb(242, 242, 230)">
-            <div class="col-md-6 col-lg-6 project-info">
-              <!-- Modal -->
-              <div id="github" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-                <div class="container">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-header" style="background:rgb(29, 29, 29)">
-                      <h2 class="project-name" style="color:whitesmoke;">Github Search</h2>
-                    </div>
-                    <div class="modal-content" style="background:rgb(29, 29, 29);width:100% !important;">
-                      <div id="carousel-slide-two" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="item active">
-                            <img src="images/gitsearch.png" alt="Github Search Screenshot" class="img-responsive">
-                          </div>
-                          <div class="item">
-                            <img src="images/gitsearch.png" alt="Github Search Screenshot" class="img-responsive">
-                          </div>
-                          <div class="item">
-                            <img src="images/gitsearch.png" alt="Github Search Screenshot" class="img-responsive">
-                          </div>
-                        </div>
-
-                        <a class="left carousel-control" href="#carousel-slide-two" role="button" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-slide-two" role="button" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End of modal -->
-              <hr class="style1">
-              <h3 class="project-title"><b>Github Search</b></h3>
-              <hr class="style1">
-              <h4 class="project-description" style="font-size:20px !important;">This a website that uses the Github API where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public
-                repositories. A person can also look for repositories</h4>
-              <h4 class="project-languages" style="font-size:20px !important;">Technologies Used:
+            <div class="social-icons">
                 <ul>
-                  <li>AngularJS</li>
-                  <li>Typescript</li>
-                  <li>HTML</li>
-                  <li>CSS(Bootstrap)</li>
+                    <li><a class="envelope" href="https://codepen.io/jvjijith"><i class="fa fa-codepen icon-sm"></i></a></li>
+                    <li><a class="twitter" href="https://twitter.com/Jijithjayakumar"><i class="fa fa-twitter icon-sm"></i></a></li>
+                    <li><a class="dribbble" href="https://jvjijith.wordpress.com/"><i class="fa fa-wordpress icon-sm"></i></a></li>
+                    <li><a class="facebook" href="https://www.facebook.com/jijithjv"><i class="fa fa-facebook icon-sm"></i></a></li>
+                    <li><a class="linkedin" href="https://in.linkedin.com/in/jijithjayakumar"><i class="fa fa-linkedin icon-sm"></i></a></li>
+                    <li><a class="tumblr" href="https://github.com/jvjijith"><i class="fa fa-github icon-sm"></i></a></li>
                 </ul>
-                <a href="#" data-toggle="modal" data-target="#github"><button class="btn btn-success btn-md see-more">See more <i class="fas fa-share"></i></button></a>
-                <br>
-                <a href="https://github.com/kelvin-wahome/Github-Search" target="blank">
-                  <h4 class="site-link btn btn-success">View Project on Github&nbsp;<i class="fab fa-github"></i></h4>
-                </a>&nbsp;<a href="https://kelvin-wahome.github.io/Github-Search/" target="blank">
-                  <h4 class="site-link btn btn-success">View site&nbsp;<span class="glyphicon glyphicon-share-alt"></span></h4>
-                </a>
-                <br>
-                <br>
             </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height: 100% !important;">
-              <div class="img-container">
-                <figcaption>Github Search</figcaption>
-                <img src="images/gitsearch.png" alt="Github Search" class="img-responsive github">
-              </div>
-            </div>
-          </div>
         </div>
-        <br>
-        <br>
-        <div class="row project-row" id="three" data-color="rgb(255, 225, 131)">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height: 100% !important;">
-            <div class="img-container">
-              <figcaption>News Highlight</figcaption>
-              <img src="images/news1.png" alt="News Highlight" class="img-responsive news">
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 project-info">
-            <!-- Modal -->
-            <div id="news" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby=1"myLargeModalLabel" aria-hidden="true">
-
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-              <div class="container">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-header" style="background:rgb(29, 29, 29)">
-                    <h2 class="project-name" style="color:whitesmoke;">News Highlight</h2>
-                  </div>
-                  <div class="modal-content" style="background:rgb(29, 29, 29);width:100% !important;">
-                    <div id="carousel-slide-two" class="carousel slide" data-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="item active">
-                          <img src="images/news1.png" alt="News Highlight Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/news2.png" alt="News Highlight Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/news3.png" alt="News Highlight Screenshot" class="img-responsive">
-                        </div>
-                      </div>
-
-                      <a class="left carousel-control" href="#carousel-slide-two" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                      </a>
-                      <a class="right carousel-control" href="#carousel-slide-two" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End of modal -->
-            <hr class="style1">
-            <h3 class="project-title"><b>News Highlight</b></h3>
-            <hr class="style1">
-            <h4 class="project-description" style="font-size:20px !important;">This is an application that helps users list and preview news articles from various sources.</h4>
-            <h4 class="project-languages" style="font-size:20px !important;">Technologies Used:
-              <ul>
-                <li> Python<b>(Flask Framework)</b></li>
-                <li>PostgreSQL</li>
-                <li> HTML </li>
-                <li>CSS(Bootstrap) </li>
-              </ul>
-              <a href="#" data-toggle="modal" data-target="#news"><button class="btn btn-success btn-md see-more">See more <i class="fas fa-share"></i></button></a>
-              <br>
-              <a href="https://github.com/kelvin-wahome/News-Highlight" target="blank">
-                <h4 class="site-link btn btn-success">View Project on Github&nbsp;<i class="fab fa-github"></i></h4>
-              </a>&nbsp;<a href="https://maendeleosasa.herokuapp.com/" target="blank">
-                <h4 class="site-link btn btn-success">View site&nbsp;<span class="glyphicon glyphicon-share-alt"></span></h4>
-              </a>
-              <br>
-              <br>
-          </div>
-        </div>
-        <div class="row project-row" id="four" data-color="rgb(242, 242, 230)">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 project-info">
-            <!-- Modal -->
-            <div id="safespace" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-              <div class="container">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-header" style="background:rgb(29, 29, 29)">
-                    <h2 class="project-name" style="color:whitesmoke;">Safe Space</h2>
-                  </div>
-                  <div class="modal-content" style="background:rgb(29, 29, 29);width:100% !important;">
-                    <div id="carousel-slide-two" class="carousel slide" data-ride="carousel">
-
-
-                      <div class="carousel-inner">
-                        <div class="item active">
-                          <img src="images/safe1.png" alt="Safe Space Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/safe2.png" alt="Safe Space Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/safe3.png" alt="Safe Space Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/safe4.png" alt="Safe Space Screenshot" class="img-responsive">
-                        </div>
-                      </div>
-
-
-                      <a class="left carousel-control" href="#carousel-slide-two" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                      </a>
-                      <a class="right carousel-control" href="#carousel-slide-two" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <!-- End of modal -->
-            <br>
-            <hr class="style1">
-            <h3 class="project-title"><b>Safe Space</b></h3>
-            <hr class="style1">
-            <h4 class="project-description" style="font-size:20px !important;">This is a web application that gives every user a random user name so that they may post issues they have anonymously in a safe space</h4>
-            <h4 class="project-languages" style="font-size:20px !important;"><strong>Technologies Used:</strong>
-              <ul>
-                <li>Python<b>(Flask Framework)</b></li>
-                <li>Javascript </li>
-                <li>PostgreSQL</li>
-                <li> HTML</li>
-                <li>CSS(Bootstrap)</li>
-              </ul>
-            </h4>
-            <a href="#" data-toggle="modal" data-target="#safespace"><button class="btn btn-success btn-md see-more">See more <i class="fas fa-share"></i></button></a>
-            <br>
-            <a href="https://github.com/kelvin-wahome/Safe-space" target="blank">
-              <h4 class="site-link btn btn-success">View Project on Github&nbsp;<i class="fab fa-github"></i></h4>
-            </a>&nbsp;<a href="https://thissafe-space.herokuapp.com/" target="blank">
-              <h4 class="site-link btn btn-success">View site&nbsp;<span class="glyphicon glyphicon-share-alt"></span></h4>
-            </a>
-            <br>
-            <br>
-          </div>
-
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height: 100% !important;">
-            <div class="img-container">
-              <figcaption>Safe Space</figcaption>
-              <img src="images/safespace1.png" alt="Safe Space" class="img-responsive safespace">
-            </div>
-          </div>
-        </div>
-        <br>
-        <br>
-        <div class="row project-row" id="four" data-color="rgb(242, 242, 230)">
-
-          <div class="container-fluid col-xs-12 col-sm-12 col-md-6 col-lg-6" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height: 100% !important;">
-            <div class="project-overlay"></div>
-            <div class="img-container">
-              <figcaption>ImageSplash</figcaption>
-              <img src="images/splash5.png" alt="ImageSplash" class="img-responsive splash">
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 project-info">
-
-            <!-- Modal -->
-            <div id="gallery" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-              <div class="container">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-header" style="background:rgb(29, 29, 29)">
-                    <h2 class="project-name" style="color:whitesmoke;">Gallery</h2>
-                  </div>
-                  <div class="modal-content" style="background:rgb(29, 29, 29);width:100% !important;">
-                    <div id="carousel-slide-two" class="carousel slide" data-ride="carousel">
-
-
-                      <div class="carousel-inner">
-                        <div class="item active">
-                          <img src="images/splash5.png" alt="ImageSplash Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/splash1.png" alt="ImageSplash Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/splash2.png" alt="ImageSplash Screenshot" class="img-responsive">
-                        </div>
-                        <div class="item">
-                          <img src="images/splash3.png" alt="ImageSplash Screenshot" class="img-responsive">
-                        </div>
-                      </div>
-
-
-                      <a class="left carousel-control" href="#carousel-slide-two" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                      </a>
-                      <a class="right carousel-control" href="#carousel-slide-two" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End of modal -->
-            <hr class="style1">
-            <h3 class="project-title"><b>ImageSplash</b></h3>
-            <hr class="style1">
-            <h4 class="project-description" style="font-size:20px !important;"> This is a personal gallery application that displays photos for others to see.</h4>
-            <h4 class="project-languages" style="font-size:20px !important;">Technologies Used:
-              <ul>
-                <li>Python<b>(Django Framework)</b></li>
-                <li>PostgreSQL</li>
-                <li>HTML</li>
-                <li>Javascript</li>
-                <li>CSS(Bootstrap)</li>
-
-              </ul>
-            </h4>
-            <a href="#" data-toggle="modal" data-target="#gallery"><button class="btn btn-success btn-md see-more">See more <i class="fas fa-share"></i></button></a>
-            <br>
-            <a href="https://github.com/kelvin-wahome/Gallery" target="blank">
-              <h4 class="site-link btn btn-success">View Project on Github&nbsp;<i class="fab fa-github"></i></h4>
-            </a>&nbsp;<a href="https://imgsplash.herokuapp.com/" target="blank">
-              <h4 class="site-link btn btn-success">View site&nbsp;<span class="glyphicon glyphicon-share-alt"></span></h4>
-            </a>
-            <br>
-            <br>
-          </div>
-        </div>
-        <br>
-        <br>
-      </div>
     </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p >&copy; 2017 Jv Jijith</p>
+                </div>
+                <div class="col-sm-6">
+                    <p class="pull-right">Developed by <a href="https://www.freecodecamp.com/jvjijith">Jijith Jayakumar</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
-
-  </div>
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer" id="contact">
-    <br>
-
-    <center>
-      <h4 style="
-          color:#d8d2c5;font-size: 30px;"><b>&nbsp;Let's Work Together</b></h4>
-      &nbsp;
-      <p style="font-size:19px;"><b>Email: wahomekelving@gmail.com</b></p>
-      &nbsp;
-      <p style="font-size:19px;"><b>Github: kelvin-wahome</b></p>
-      &nbsp;
-      <p style="font-size:17px;"><small>&copy; Kelvin Wahome</small></p>
-    </center>
-  </div>
-  <script src="js/scripts.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+  <
 </html>
